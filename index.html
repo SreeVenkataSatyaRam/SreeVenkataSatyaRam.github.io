@@ -1,107 +1,92 @@
+<!--
+Author: Milind Mishra
+Version: Portfolio v1
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-
-  <!-- Native CSS Start -->
-  <link rel="stylesheet" href="/css/index.css">
-  <!-- Native CSS Start -->
-
-  <!-- Bootstrap CSS Start -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <!-- Bootstrap CSS End -->
-
-  <!-- Icon Pack Start -->
-  <script src="https://kit.fontawesome.com/94b68a0c09.js" crossorigin="anonymous"></script>
-  <!-- Icon Pack End -->
-
-  <!-- Meta Start -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>I'm Himel</title>
-  <!-- Meta End -->
+  <meta charset="utf-8">
+  <title>Milind's Portfolio</title>
+  <meta name="description" content="Milind's Portfolio v1">
+  <meta name="og:title" content="Milind Mishra">
+  <meta name="og:description" content="Milind's Portfolio v1">
+  <meta name="og:type" content="website">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
-<body style="background-color:#f4f5ff;">
-
-  <main class="d-block mx-auto" style="max-width:400px;">
-
-    <div class="w-100">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid my-auto">
-          <p class="navbar-brand h1 mb-0">
-            I'm Himel
-          </p>
-          <button class="btn btn-danger" onclick="location.href = '/contact';"><i class="fa-solid fa-message pe-2"></i>Let's talk!</button>
-        </div>
-      </nav>
+<body>
+  <div class="container">
+    <div id="nav">
+      <span id="pill" contenteditable>Milind</span>
+      <a href="https://linkedin.com/in/milind--mishra" target="_blank" style="float: right;">LinkedIn</a>
+      <a href="http://www.github.com/thatbeautifuldream" target="_blank" style="float: right;">GitHub</a>
+      <a href="mailto:contact@milind.live" target="_blank" style="float: right;">Mail</a>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <img src="res/himel.jpg" alt="" class="rounded-5 d-block mx-auto my-3" style="width:50%">
-          <p class="h1 text-center fw-bold">
-            Himel Das
-          </p>
-          <p class="fs-6 text-center">
-            @himeeeelll
-          </p>
-          <p class="fs-5 text-center">
-            Hey there! I'm a programmer, podcaster, article writer and a bookworm.
-          </p>
-        </div>
+    <div id="hero">Hello, I'm Milind.</div>
+    <br />
+    <div id="blog">
+      <p>
+        <span title="I'm open to work!">
+          I'm a Designer turned Frontend Engineer. I enjoy Frontend, Backend as well
+          as UX/UI.
+        </span>
+        <br /> <br />
+        I currently work at <a href="https://locusconnect.com" target="_blank">Locus Connect</a> as
+        <span id="highlight"
+          title="Builds websites, designs applications and ensures overall user accessibility">Frontend Engineer</span>.
+        I have previously interned at <a href="https://ineuron.ai" target="_blank">iNeuron.ai</a> as <span
+          id="highlight"
+          title="Creates user-friendly interfaces that enable users to understand how to use complex technical products">UX/UI
+          Designer</span> and 
+        <a href="https://plusklass.com" target="_blank">PlusKlass</a> as <span id="highlight"
+          title="Skilled wordsmiths that typically develop product manuals, how-to guides, website help sections, journal articles, and other content that distills technical information with ease and clarity.">Technical
+          Writer</span>.
+        <br /><br />
+        <span id="code-block">Been studying some backend and machine learning, meanwhile.</span>
+      </p>
+      <a href="https://gh.milind.live" target="_blank">
+        <img id="github-graph" src="https://ghchart.rshah.org/thatbeautifuldream" alt="Milind's Github chart" />
+      </a>
       </div>
-      <div class="row border border-1 m-3 rounded">
-        <div class="col-4 text-center">
-          <p class="h6 m-1">
-            Age
-          </p>
-          <p class="h1">
-            14
-          </p>
+    <br />
+    <div id="blog">
+      <div id="blog">
+        <div id="title">
+          Technical Blog
         </div>
-        <div class="col-4 text-center border-start border-end">
-          <p class="h6 m-1">
-            Grade
-          </p>
-          <p class="h1">
-            8<sup>th</sup>
-          </p>
-        </div>
-        <div class="col-4 text-center">
-          <p class="h6 m-1">
-            Projects
-          </p>
-          <p class="h1">
-            6
-          </p>
-        </div>
+        <br />
+        <table>
+          <tr>
+            <td><span id="date">Mar 20, 2022</span></td>
+            <td><a href="https://milindmishra.me/price-tracker" target="_blank">Web
+                🛍 (Amazon.in) Price Tracker using Puppeteer
+              </a></td></a>
+          </tr>
+          <tr>
+            <td><span id="date">Feb 21, 2022</span></td>
+            <td><a href="https://milindmishra.me/higher-order-functions-ii-and-beyond" target="_blank">Higher Order
+                Functions - (II) & Beyond ⚡️
+              </a></td>
+          </tr>
+        </table>
       </div>
-      <div class="row">
-        <div class="col-7">
-          <a href="https://himeeeelll.netlify.app/himel_cv.png" download>
-            <button class="btn btn-danger w-100"><i class="fa-solid fa-download pe-2"></i>Download CV</button>
-          </a>
-        </div>
-        <div class="col-5">
-          <button class="btn btn-outline-danger w-100" onclick="location.href = 'https://github.com/himeeeelll';"><i class="fa-solid fa-briefcase pe-2"></i></i>Projects</button>
+      <br>
+      <div class="wrap">
+        <p class='easter-egg'>The bartender says, “Success, but you&apos;re not ready!”
+          So a JavaScript function walks into a bar.
+        </p>
+        <span class="easter-egg-span">(pssht!)</span>
+      </div>
+      <br />
+      <a href="https://blog.milind.live/" target="_blank" style="float: right;">blog.milind.live</a>
+      <div style="font-size: 14px; cursor: pointer; color: rgba(255, 255, 255, 0.8);" id="inject-year">
+        Milind Mishra &copy;
       </div>
     </div>
-  </div>
-</div>
-</main>
-
-
-
-
-<!-- Native JS Start -->
-<script src="js/index.js"></script>
-<!-- Native JS End -->
-
-<!-- Bootstrap JS Start -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<!-- Bootstrap JS End -->
-
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
