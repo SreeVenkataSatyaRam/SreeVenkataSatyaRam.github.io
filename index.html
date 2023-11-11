@@ -1,312 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Chetan Nada's Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-   </head>
-   <body>
-      <!-- Scroll Button start -->
-      <div class="scroll-up-btn">
-         <i class="fas fa-angle-double-up"></i>
-      </div>
-      <!-- Scroll Button end -->
-      <!-- Navbar Start-->
-      <nav class="navbar">
-         <div class="max-width">
-            <div class="logo">
-               <a href="#">Portfo<span>lio.</span>
-               </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Marlon</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Marlon</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Marlon</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <ul class="menu">
-               <li>
-                  <a href="#home" class="menu-btn">Home</a>
-               </li>
-               <li>
-                  <a href="#about" class="menu-btn">About</a>
-               </li>
-               <li>
-                  <a href="#skills" class="menu-btn">Skills</a>
-               </li>
-               <li>
-                  <a href="#projects" class="menu-btn">Projects</a>
-               </li>
-               <li>
-                  <a href="#contact" class="menu-btn">Contact</a>
-               </li>
-            </ul>
-            <div class="menu-btn">
-               <i class="fas fa-bars"></i>
-            </div>
-         </div>
-      </nav>
-      <!-- Navbar End -->
-      <!-- Home Section Start -->
-      <section class="home" id="home">
-         <div class="max-width">
-            <div class="home-content">
-               <div class="text-1">Hello 👋 I'm</div>
-               <div class="text-2">Chetan Nada</div>
-               <div class="text-3">And I'm a <span class="typing"></span>
-               </div>
-               <a class="web" href="#contact">I need a website <i class="fad fa-angle-right"></i>
-               </a>
-               <a href="https://www.linkedin.com/in/chetannada/" target="_blank">I'm looking to hire <i class="fad fa-angle-right"></i>
-               </a>
-            </div>
-         </div>
-      </section>
-      <!-- Home Section End -->
-      <!-- About section start -->
-      <section class="about" id="about">
-         <div class="max-width">
-            <h2 class="title fadein">About me</h2>
-            <div class="about-content">
-               <div class="column left">
-                  <img src="images/Chetan Nada.jpg" alt="Chetan Nada">
-                  <div>
-                     <div class="wrapper">
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://www.linkedin.com/in/chetannada" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                           </div>
-                           <span>LinkedIn </a>
-                           </span>
-                        </div>
-                        <div class="buttonmob">
-                           <div class="button1">
-                              <div class="icon">
-                                 <a href="https://twitter.com/chetannada" target="_blank">
-                                 <i class="fab fa-twitter"></i>
-                              </div>
-                              <span>Twitter </a>
-                              </span>
-                           </div>
-                        </div>
-                        <div class="buttonmob1"></div>
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://github.com/chetannada" target="_blank">
-                              <i class="fab fa-github"></i>
-                           </div>
-                           <span>Github </a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="column right">
-                  <div class="text">I'm a Chetan and <span class="break">I'm a <span class="typing2"></span>
-                     </span>
-                  </div>
-                  <p>I'm Self-taught React.js Developer. My goal is to build a fast, flexible, mobile-first website that clearly communicates with visitors. I have done B.E in E&C, I am a Youtuber having 90k+ Subscribers. I have experience in the industrial field as a service engineer and in the education field as Mathematics Teacher.</p>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- about section End -->
-      <!-- Skills section start -->
-      <section class="skills" id="skills">
-         <div class="max-width">
-            <h2 class="title fadein">My skills</h2>
-            <div class="skills-content">
-               <div class="column left">
-                  <div class="text">My creative skills & experiences</div>
-                  <p>I am a React Js Developer with a passion for learning and can work with estimation of future tasks and client feedback. I am highly-motivated, result oriented, self-driven, hard-working, fast learner and constantly seeking to improve my skills and am fully aware of the latest Front-end Development Tools. I have a firm knowledge of JavaScript and React Js, Parcel js, Node js, Redux, HTML5, CSS3, Git, SASS, Tailwind CSS, Bootstrap, REST API, JSON, Axios, Adobe Photoshop and possess a good knowledge of computer software packages (frameworks and tools) that are used in today’s technology.</p>
-                  <a href="#projects">Read more <i class="fas fa-angle-double-right"></i>
-                  </a>
-               </div>
-               <div class="column right">
-                  <div class="info">
-                     <a href="https://reactjs.org/" target="_blank">
-                     <img src="./images/react.png" alt="react" width="80" height="80" />
-                     </a>
-                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                     <img src="./images/javascript.png" alt="javascript" width="80" height="80" />
-                     </a>
-                     <a href="https://www.typescriptlang.org/" target="_blank">
-                     <img src="./images/typescript.png" alt="TypeScript" width="80" height="80" />
-                     </a>
-                     <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-                     <img src="./images/node-js.png" alt="nodejs" width="80" height="80" />
-                     </a>
-                     <a href="https://redux.js.org" target="_blank" rel="noreferrer">
-                     <img src="./images/redux.png" alt="redux" width="80" height="80" />
-                     </a>
-                     <a href="https://jquery.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/jquery.png" alt="jquery" width="80" height="80" />
-                     </a>
-                     <a href="https://www.w3.org/html/" target="_blank">
-                     <img src="./images/html5.png" alt="html5" width="80" height="80" />
-                     </a>
-                     <a href="https://www.w3schools.com/css/" target="_blank">
-                     <img src="./images/css3.png" alt="css3" width="80" height="80" />
-                     </a>
-                     <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-                     <img src="./images/bootstrap.png" alt="bootstrap" width="80" height="80" />
-                     </a>
-                     <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
-                     <img src="./images/sass.png" alt="sass" width="80" height="80" />
-                     </a>
-                     <a href="https://tailwindcss.com/" target="_blank">
-                     <img src="./images/tailwind-css.png" alt="react" width="80" height="80" />
-                     </a>
-                     <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/mongodb.png" alt="MongoDB" width="80" height="80" />
-                     </a>
-                     <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/git.png" alt="git" width="80" height="80" />
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Skills section end -->
-      <!-- Project section start -->
-      <section class="projects" id="projects">
-         <div class="max-width">
-            <h2 class="title fadein">My Projects</h2>
-            <div class="carousel owl-carousel">
-               <div class="card">
-                  <a href="https://foodfire-app.netlify.app/" target="_blank">
-                     <div class="box">
-                        <img src="./images/Food Fire.png" alt="Food Fire App">
-                        <p>FoodFire App using React.js</p>
-                        <p>React.js, Parcel.js</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="card">
-                  <a href="https://react-task-dashboard-panel.netlify.app/" target="_blank">
-                     <div class="box">
-                        <img src="./images/ReactJs User Dashboard Panel.png" alt="ReactJs User Dashboard Panel">
-                        <p>ReactJs User Dashboard Panel</p>
-                        <p>React.js, Webpack, MUI</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="card">
-                  <a href="https://chetannada.github.io/FirstReactApp" target="_blank">
-                     <div class="box">
-                        <img src="./images/Avatar API.jpg" alt="Avatar API">
-                        <p>Avatar of Developers</p>
-                        <p>React.js, Webpack</p>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Project section end -->
-      <!-- Contact section start -->
-      <section class="contact" id="contact">
-         <div class="max-width">
-            <h2 class="title fadein">Contact me</h2>
-            <div class="contact-content">
-               <div class="column left">
-                  <div class="text">Reach Out to me!</div>
-                  <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
-                  <div class="icons">
-                     <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                           <div class="head">Name</div>
-                           <div class="sub-title">Chetan Nada</div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                           <div class="head">Address</div>
-                           <div class="sub-title">Surat, India</div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <i class="fas fa-envelope email-icon"></i>
-                        <div class="info">
-                           <div class="head">Email</div>
-                           <div class="sub-title">call2chetannada@gmail.com</div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="text1">Stay Connected</div>
-                  <div>
-                     <div class="wrapper">
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://www.linkedin.com/in/chetannada" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                           </div>
-                           <span>LinkedIn </a>
-                           </span>
-                        </div>
-                        <div class="buttonmob">
-                           <div class="button1">
-                              <div class="icon">
-                                 <a href="https://twitter.com/chetannada" target="_blank">
-                                 <i class="fab fa-twitter"></i>
-                              </div>
-                              <span>Twitter </a>
-                              </span>
-                           </div>
-                        </div>
-                        <div class="buttonmob1"></div>
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://github.com/chetannada" target="_blank">
-                              <i class="fab fa-github"></i>
-                           </div>
-                           <span>Github </a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="column right">
-                  <div class="text">Message me</div>
-                  <form action="#">
-                     <div class="fields">
-                        <div class="field name">
-                           <input type="text" placeholder="Name" required>
-                        </div>
-                        <div class="field email">
-                           <input type="email" placeholder="Email" name="email" required>
-                        </div>
-                     </div>
-                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
-                     </div>
-                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
-                     </div>
-                     <div class="button">
-                        <button type="submit">Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Contact section end -->
-      <!-- footer section start -->
-      <footer>
-         <span>Created By <a href="https://www.linkedin.com/in/chetannada/" target="_blank">Chetan Nada</a> | <span class="far fa-copyright"></span> 2023 All rights reserved </span>
-      </footer>
-      <!-- footer section end -->
-      <!-- External Javascript File start-->
-      <script src="script.js" async></script>
-      <!-- External Javascript File end-->
-   </body>
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
